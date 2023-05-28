@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koo's Todo Lists</title>
+  </head>
+  <body>
+    <div id="header">
+      <h3 id="date"></h3>
+      <div id="geolocation"></div>
+      <h1 id="clock"></h1>
+    </div>
+
+    <div id="main">
+      <div id="login-form-continer">
+        <form id="login-form">
+          <input type="text" placeholder="Write Your Name!" />
+          <button id="login-btn">Log-in</button>
+        </form>
+      </div>
+
+      <div class="hidden" id="todo-list-form-container">
+        <h1 id="name"></h1>
+        <form id="todo-list-form">
+          <input type="text" placeholder="Add Todo" />
+          <button>Add</button>
+        </form>
+      </div>
+      <div id="todo-lists-container">
+        <ul id="todo-lists"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="js/clock.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/todolists.js"></script>
+  <script src="js/backgrounds.js"></script>
+  <script src="js/geolocation.js"></script>
+</html>

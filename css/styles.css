@@ -1,0 +1,95 @@
+.hidden {
+  display: none;
+}
+body {
+  height: 100vh;
+  width: 100wh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 200px;
+  color: whitesmoke;
+  font-weight: 50;
+}
+h1 {
+  text-align: center;
+}
+input {
+  width: 400px;
+  height: 40px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid whitesmoke;
+  color: whitesmoke;
+  font-size: 20px;
+}
+input::placeholder {
+  color: whitesmoke;
+  font-weight: lighter;
+  font-size: 20px;
+}
+button {
+  color: whitesmoke;
+  width: 70px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  height: 40px;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0.3, 0.3);
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#date {
+  font-weight: lighter;
+  margin: 0;
+}
+#clock {
+  font-size: 90px;
+  margin: 0;
+  border-bottom: 3px solid whitesmoke;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#todo-lists-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#todo-lists-container li {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  width: 400px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+#todo-lists-container span {
+  width: 300px;
+  height: auto;
+  padding: 18px;
+  text-overflow: ellipsis;
+}
+#todo-lists button {
+  font-size: 15px;
+  border-top: 0px;
+  border-right: 0px;
+}
+#todo-lists button:hover {
+  background-color: rgba(199, 81, 81, 0.5);
+}
